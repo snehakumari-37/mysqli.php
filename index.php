@@ -11,14 +11,14 @@ die('unable to connect'.mysqli_connect_error());
 else{
     echo "wooohoo";
     $tableName = 'register';
-    $want_change = "(`username`,`email`,`password`,`gender`)";
+    $want_change_in = "(`username`,`email`,`password`,`gender`)";
     $new_username = "xon";
     $new_email = 'z@xol.com';
     $new_pass = 'passing';
     $new_gender = 'f';
     // $sql = "INSERT INTO `register` (`username`,`email`,`password`,`gender`) VALUES ('akar bakar','ab@lol.ml','zooon.passwording','m')";
-    $sql = "INSERT INTO `$tableName` (`username`, `email`, `password`, `gender`) VALUES ('$new_username', '$new_email', '$new_pass', '$new_gender')";
-//     $sql = "DELETE FROM `register` WHERE gender='m'";
+    $sql = "INSERT INTO `$tableName` $want_change_in VALUES ('$new_username', '$new_email', '$new_pass', '$new_gender')";
+    $sql = "DELETE FROM `register` WHERE gender='m'";
     $result = mysqli_query($conn, $sql);
     // mysql_query($conn,$sql)
     
