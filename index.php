@@ -12,7 +12,7 @@ else{
     echo "wooohoo";
     $tableName = 'register';
     $want_change = "(`username`,`email`,`password`,`gender`)";
-    $new_uername = "xon";
+    $new_username = "xon";
     $new_email = 'z@xol.com';
     $new_pass = 'passing';
     $new_gender = 'f';
