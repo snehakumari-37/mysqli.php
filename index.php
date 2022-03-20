@@ -6,11 +6,9 @@ $dbName = 'sql6480104';
 
 $conn = mysqli_connect('sql6.freesqldatabase.com','sql6480104','ZyMjJ1CvvH','sql6480104');
 if(!$conn){
-die('sorry');
+die('unable to connect'.mysqli_connect_error());
 }
 else{
-    echo mysqli_error($conn);
-    // echo mysqli_query();
     echo "wooohoo";
     // $sql = "INSERT INTO `register` (`username`,`email`,`password`,`gender`) VALUES ('akar bakar','ab@lol.ml','zooon.passwording','m')";
     // $sql = "INSERT INTO `register` (`username`, `email`, `password`, `gender`) VALUES ('kek', ';dfslkajfdl', 'jlsdfjalf', 'f')";
