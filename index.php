@@ -1,4 +1,22 @@
 <?php
+/////////////////////////////////
+# FUNCTIONS
+$GLOBALS['hostname'] = 'sql6.freesqldatabase.com';
+$GLOBALS['username'] = 'sql6480104';
+$GLOBALS['password'] = 'ZyMjJ1CvvH';
+$GLOBALS['dbName'] = 'sql6480104';
+
+function conn(){
+    $GLOBALS['conn'] = mysqli_connect($GLOBALS['hostname'],$GLOBALS['username'],$GLOBALS['password'],$GLOBALS['dbName']);
+    if($GLOBALS['conn']){echo'<br><h1>CONNECTED SUCCESSFULLY</h1>';}
+    else{echo('<br><h1>FAILED TO CONNECT <br>ERROR =><br>' . mysqli_connect_error() .'</h1>');}
+}
+function close(){
+    mysqli_close($GLOBALS['conn']);
+}
+conn();
+close();
+////////////////////////////////////////////
 $hostname = 'sql6.freesqldatabase.com';
 $username ='sql6480104';
 $password = 'ZyMjJ1CvvH';
