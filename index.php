@@ -11,6 +11,7 @@ die('unable to connect'.mysqli_connect_error());
 else{
     echo "wooohoo";
     $tableName = 'register';
+    $want_change = "(`username`,`email`,`password`,`gender`)";
     // $sql = "INSERT INTO `register` (`username`,`email`,`password`,`gender`) VALUES ('akar bakar','ab@lol.ml','zooon.passwording','m')";
     // $sql = "INSERT INTO `$tableName` (`username`, `email`, `password`, `gender`) VALUES ('kek', ';dfslkajfdl', 'jlsdfjalf', 'f')";
     // mysqli_query($conn,$sql);
