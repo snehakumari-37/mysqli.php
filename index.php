@@ -10,8 +10,9 @@ die('unable to connect'.mysqli_connect_error());
 }
 else{
     echo "wooohoo";
+    $tableName = 'register';
     // $sql = "INSERT INTO `register` (`username`,`email`,`password`,`gender`) VALUES ('akar bakar','ab@lol.ml','zooon.passwording','m')";
-    // $sql = "INSERT INTO `register` (`username`, `email`, `password`, `gender`) VALUES ('kek', ';dfslkajfdl', 'jlsdfjalf', 'f')";
+    // $sql = "INSERT INTO `$tableName` (`username`, `email`, `password`, `gender`) VALUES ('kek', ';dfslkajfdl', 'jlsdfjalf', 'f')";
     // mysqli_query($conn,$sql);
     $sql = "DELETE FROM `register` WHERE gender='m'";
     $result = mysqli_query($conn, $sql);
